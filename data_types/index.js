@@ -175,8 +175,50 @@ let myFavColor = "blue"
 console.log(myFavColor);
 console.log(myFavColor == "blue");
 
-
-
 // Flip booleans
 console.log(!true) // prints false - flipping the boolean
 
+let myAge = 32;
+
+console.log("My Age:",myAge);
+
+if(myAge) {
+    console.log("Age was provided");
+} else {
+    console.log("Age was not provided");
+}
+
+/* 
+    ? Arrays
+*/ 
+let emptyArr = new Array(50).fill("item")
+console.log(emptyArr);
+
+
+let otherArr = ["item","item"]
+console.log(otherArr)
+
+console.log(Array.isArray(otherArr));
+
+
+/* 
+    ? Objects
+*/
+
+let userProfile = new Object();
+
+userProfile.name = "Amit";
+userProfile.myFavColor = "blue";
+userProfile.darkMode = true;
+
+console.log(userProfile);
+
+let character = {
+    name: "Sonic The Hedgehog",
+    rings: 49,
+    emeralds: 5,
+    lives: 3
+}
+
+
+console.log(character);
