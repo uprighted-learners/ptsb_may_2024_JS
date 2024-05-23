@@ -183,6 +183,20 @@ age < 16
 ? console.log("can drink")
 : console.log("invalid input");
 
+let time = "9:00 PM";
+let meal;
+
+if(time.slice(6) === "PM"){
+  meal = "dinner"
+} else {
+  meal = "brunch"
+}
+
+
+// let meal = time.slice(6) === "PM" ? "dinner" : "brunch"
+
+
+
 
 /*
     ? Switch statements
@@ -219,6 +233,4 @@ switch (uprightInstructor) {
         break;
     default: 
         console.log("sorry name not recognized");
-    
-    
 }
