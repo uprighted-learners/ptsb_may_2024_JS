@@ -97,12 +97,17 @@ do {
     spidyHP--;
     console.log("Spider-Man HP:", spidyHP);
 
+    let spidyHit = Math.floor(Math.random() * 3);
+    console.log(`Spider-Man hits ${villian.baddie} for ${spidyHit} damage`);
+    villian.hp -= spidyHit;
 
+    console.log("Villian HP:", villian.hp );
+
+    if (spidyHP === 0){
+        break;
+    }
 
 } while (villian.hp > 0)
 
 
-
-
-
-
+villian.hp <= 0 ? console.log(`Spider-man captures ${villian.baddie}`) : console.log(`${villian.baddie} has taken down spiderman`);
