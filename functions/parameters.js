@@ -33,4 +33,72 @@ order("milk shake")
         - call (or invoke) your function
 */
 
+function greetFirstLast (fName,lName) {
+    let firstLast = fName + " " + lName;
+    console.log(`Hi, my name is ${firstLast}`)
+    // With return
+    // return `Hi, my name is ${firstLast}`
+}
 
+greetFirstLast("Bugs", "Bunny");
+greetFirstLast("Slim", "Shady");
+
+// Have to place the function call in a console.log in order to see what it is returning
+// console.log(greetFirstLast("Amit", "Mangat"));
+
+let x = 1;
+
+function one() {
+    x = 2;
+}
+
+one();
+
+console.log(x); // 2
+
+function calc(x,y,operator){
+    switch(operator){
+        case "*":
+            console.log("Multiply", x, y);
+            return x * y
+        case "-":
+            console.log("Subtract", x, y);
+            return x - y
+        case "+":
+            console.log("Add", x, y);
+            return x + y
+        case "/":
+            console.log("Divide", x, y);
+            return x / y
+        default: 
+            console.log("Invalid input");
+    }
+}
+
+// console.log(calc(2,2,"*"));
+console.log(calc(1,3,"+"));
+console.log(calc(10,5,"/"));
+
+
+let thisSum = calc(2,2,"+")
+
+console.log(thisSum);
+
+
+console.log(typeof console)
+
+let mockConsoleObject = {
+    log: function (text) {
+        process.stdout.write(text + "\n")
+    },
+    add: function (num1, num2){
+        return num1 + num2
+    },
+    capitalize: function (str) {
+        return str[0].toUpperCase() + str.slice(1) 
+    } 
+}
+
+mockConsoleObject.log("some type of data to display?")
+console.log(mockConsoleObject.add(2,2))
+console.log(mockConsoleObject.capitalize("daffy"))
