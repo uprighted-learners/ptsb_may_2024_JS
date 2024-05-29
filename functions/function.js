@@ -6,7 +6,6 @@
 
 */
 
-
 /*
     ? Function Declaration
         (1)       (2)
@@ -108,5 +107,5 @@ function returnToMeTheResultOfHavingCoffee() {
 console.log(returnToMeTheResultOfHavingCoffee());
 
 
-let resultOfHavingCoffee = returnToMeTheResultOfHavingCoffee()
+let resultOfHavingCoffee = returnToMeTheResultOfHavingCoffee();
 

@@ -76,8 +76,8 @@ function calc(x,y,operator){
 }
 
 // console.log(calc(2,2,"*"));
-console.log(calc(1,3,"+"));
-console.log(calc(10,5,"/"));
+console.log(calc(1, 3, "+"));
+console.log(calc(10,5, "/"));
 
 
 let thisSum = calc(2,2,"+")
